@@ -552,6 +552,8 @@ a{
     justify-content:space-between;
     margin-top:20px;
     text-align:center;
+    width: 80%;       
+    margin: 20px auto 0;
 
 }
 
