@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chip Story</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container">
+      <a href="#home" class="logo">MicroImpact</a>
+      <ul class="nav_menu">
+        <li><a href="#money">자본의흐름</a></li>
+        <li><a href="#power">데이터센터</a></li>
+        <li><a href="#computing">HBM</a></li>
+        <li><a href="#bottleneck">병목현상</a></li>
+        <li><a href="#future">미래</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero__bg"></div>
+    <div class="container">
+      <h1>THE WORLD<br>RUNS ON<br>CHIPS<span class="blink">.</span></h1>
+      <h2>왜, 작은칩이 세상을 흔드는가?</h2>
+    </div>
+  </section>
+
+
+  <!-- Money Flow To Chips -->
+  <section class="money-flow" id="money">
+    <div class="container">
+    <div class="blue-square01"></div>
+      <div class="section-title">
+        <h2>THE MONEY FLOWS TO <span class="blue">CHIPS</span></h2>
+        <p>지금 세계의 돈은 반도체로 몰려들고 있다!</p>
+      </div>
+
+      <div class="flow-chart">
+
+        <!-- NVIDIA -->
+        <div class="company nvidia reveal">
+          <div class="logo-circle">
+            <img src="./img/nvidia.png" alt="nvidia">
+          </div>
+          <h3>NVIDIA</h3>
+          <p>(AI GPU)</p>
+
+          <div class="info-box">
+            AI모델 학습<br>
+            GPU 수요 급증
+          </div>
+        </div>
+
+        <!-- TSMC -->
+        <div class="company tsmc reveal">
+          <div class="logo-circle">
+            <img src="./img/tsmc.png" alt="nvidia">
+          </div>
+          <h3>TSMC</h3>
+          <p>(CoWoS)</p>
+
+          <div class="info-box">
+            AI칩 생산<br>
+            수요폭증
+          </div>
+        </div>
+
+        <!-- HYNIX -->
+        <div class="company hynix reveal">
+          <div class="logo-circle">
+            <img src="./img/sk hynix.png" alt="nvidia">
+          </div>
+          <h3>하이닉스</h3>
+          <p>(HBM)</p>
+
+          <div class="info-box yellow">
+            AI 메모리<br>
+            핵심 공급자
+          </div>
+
+          <div class="info-box">
+            AI 성능 향상의<br>
+            핵심 HBM 수요 급증
+          </div>
+        </div>
+
+        <!-- SAMSUNG -->
+        <div class="company samsung reveal">
+          <div class="logo-circle">
+            <img src="./img/samsung.png" alt="nvidia">
+          </div>
+          <h3>삼성전자</h3>
+          <p>(HBM4/메모리)</p>
+
+          <div class="info-box yellow">
+            차세대 HBM 경쟁
+          </div>
+
+          <div class="info-box">
+            차세대 메모리 경쟁<br>
+            HBM4 투자 확대
+          </div>
+        </div>
+
+
+        <!-- 수익성 -->
+        <div class="profit">수익성 ↑</div>
+
+        <!-- 그래프 -->
+        <div class="investment-area">
+          <div class="graph-label">
+            투자규모 / 관심도
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="year">
+          <strong>2022</strong>
+          <span>CHAT GPT</span>
+        </div>
+
+        <div class="year">
+          <strong>2023</strong>
+          <span>GPU RUSH</span>
+        </div>
+
+        <div class="year">
+          <strong>2024</strong>
+          <span>HBM WAR</span>
+        </div>
+
+        <div class="year">
+          <strong>2025</strong>
+          <span>POWER & COOLING</span>
+        </div>
+
+        <div class="year">
+          <strong>2026</strong>
+          <span>~ING</span>
+        </div>
+      </div>
+
+
+      <div class="section-text">
+        <h3>년도별 AI 산업의 투자 흐름 개념도</h3>
+        <p>현재 AI 산업의 폭발적인 성장은 세계 자본의 흐름 자체를 바꾸고 있다. NVIDIA는 AI GPU 수요 증가와 함께 시가총액이 급격히 상승했고, SK hynix는 HBM 시장 주도권과
+          NVIDIA 공급 확대 기대감 속에서 큰 폭의 주가 상승을 기록했다. 삼성전자 역시 AI 메모리 경쟁과 HBM4 투자 확대 흐름 속에서 다시 AI 반도체 핵심 기업으로 주목받고 있으며, TSMC
+          또한 첨단 공정과 CoWoS 패키징 기술을 기반으로 AI 반도체 공급망의 중심축 역할을 하고 있다.</p>
+
+        <p>세계 자본은 이제 단순한 소프트웨어 기업이 아니라 AI를 실제로 작동시키는 반도체 공급망 전체로 집중되기 시작했다. 특히 HBM은 기존 DRAM보다 훨씬 높은 부가가치를 창출하는 차세대 메모리로
+          평가받으며, AI 서버 확산과 함께 수요가 빠르게 증가하고 있다. 이에 따라 SK hynix와 삼성전자는 세계 AI 메모리 시장의 핵심 공급자로 부상했으며, AI 경쟁이 심화될수록 첨단 메모리
+          기술을 보유한 기업의 영향력과 수익성은 더욱 커질 것으로 전망된다.</p>
+      </div>
+  </section>
+
+
+
+  <!-- AI RUNS ON POWER -->
+  <section class="power" id="power">
+    <div class="container">
+     <div class="blue-square02"></div>
+      <div class="section-title">
+        <h2>AI RUNS ON <span class="blue">POWER</span></h2>
+        <p>AI가 얼마나 많은 전기를 먹는가</p>
+      </div>
+
+      <div class="chart-area">
+        <div class="power-chart">
+
+          <div class="bar usa reveal-bar">
+            <span class="value">182.61</span>
+            <div class="column"></div>
+            <p>미국</p>
+          </div>
+
+          <div class="bar china reveal-bar">
+            <span class="value">101.85</span>
+            <div class="column"></div>
+            <p>중국</p>
+          </div>
+
+          <div class="bar germany reveal-bar">
+            <span class="value">20</span>
+            <div class="column"></div>
+            <p>독일</p>
+          </div>
+
+          <div class="bar japan reveal-bar">
+            <span class="value">19</span>
+            <div class="column"></div>
+            <p>일본</p>
+          </div>
+
+          <div class="bar france reveal-bar" >
+            <span class="value">10</span>
+            <div class="column"></div>
+            <p>프랑스</p>
+          </div>
+
+          <div class="bar uk reveal-bar">
+            <span class="value">6</span>
+            <div class="column"></div>
+            <p>영국</p>
+          </div>
+
+          <div class="bar netherlands reveal-bar">
+            <span class="value">5</span>
+            <div class="column"></div>
+            <p>네덜란드</p>
+          </div>
+
+          <div class="bar canada reveal-bar">
+            <span class="value">4.1</span>
+            <div class="column"></div>
+            <p>캐나다</p>
+          </div>
+
+          <div class="bar australia reveal-bar">
+            <span class="value">3.9</span>
+            <div class="column"></div>
+            <p>호주</p>
+          </div>
+
+          <div class="bar russia reveal-bar">
+            <span class="value">2.6</span>
+            <div class="column"></div>
+            <p>러시아</p>
+          </div>
+
+          <div class="bar others reveal-bar">
+            <span class="value">59.94</span>
+            <div class="column"></div>
+            <p>그 외</p>
+          </div>
+        </div>
+
+
+
+        <div class="chart-unit">
+          TWh(단위)
+        </div>
+
+      </div>
+
+      <div class="section-text">
+        <h3 class="chart-title">
+          국가별 데이터 센터 전력 소비 2024
+        </h3>
+        <p>
+          ChatGPT를 시작으로 생성형 AI 서비스가 빠르게 확산되면서 전 세계 데이터 생성량은 폭발적으로 증가했다. 이를 실시간으로 학습하고 처리하기 위해 데이터센터는 지속적으로 확대되었고, 그 과정에서
+          막대한 전력 소비가 발생하고 있다.
+          2024년 기준 데이터센터 전력 소비는 미국과 중국을 중심으로 압도적인 규모를 보였으며, 이는 AI 산업이 막대한 인프라를 필요로 하는 산업으로 변화하고 있음을 보여준다.
+          2026년 현재 이제 데이터센터는 단순한 서버 공간이 아니라 방대한 데이터를 처리하고 AI를 구동하기 위한 핵심 전력 인프라가 되었으며, AI 경쟁력은 곧 전력과 반도체, 그리고 데이터센터를
+          확보하는 능력으로 이어지고 있다.
+          결국 AI 시대의 경쟁은 알고리즘만의 경쟁이 아니라, 전력·데이터센터·반도체를 확보하기 위한 인프라 경쟁으로 확장되고 있다.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- Computing Flow -->
+  <section class="computing-Flow" id="computing">
+    <div class="container">
+      <div class="blue-square03"></div>
+      <div class="section-title">
+        <h2><span class="blue">AI</span> COMPUTING FLOW</h2>
+        <p>왜 HBM이 AI 성능을 결정하는가</p>
+      </div>
+
+      <div class="flow-wrap">
+        <div class="flow-left">
+
+          <div class="flow-row">
+            <h3>GPU</h3>
+            <img src="./img/08.png" alt="">
+          </div>
+
+          <div class="flow-row">
+            <h3>HBM</h3>
+            <img src="./img/07.png" alt="">
+            <span>HBM3 / HBM3E</span>
+          </div>
+
+          <div class="flow-row">
+            <h3>CoWoS</h3>
+            <img src="./img/06.png" alt="">
+          </div>
+
+          <div class="flow-row">
+            <h3>DATA<br>CENTER</h3>
+            <img src="./img/09.png" alt="">
+          </div>
+
+        </div>
+
+
+        <div class="flow-center">
+          <div class="data-pill">
+            폭발하는 데이터
+          </div>
+          <div class="arrow-down">⌄</div>
+          <img src="./img/Frame 2.jpg" class="funnel-img">
+        </div>
+
+
+        <div class="flow-right">
+          <div class="flow-text reveal">GPU의 연산 수요 증가</div>
+          <div class="flow-text reveal">HBM의 초고속 데이터 공급</div>
+          <div class="flow-text reveal">CoWoS가 연결</div>
+          <div class="flow-text reveal">초고속 데이터 처리</div>
+        </div>
+      </div>
+
+      <div class="section-text">
+        <h3>HBM이 AI 시대의 핵심인 이유</h3>
+        <p>
+          AI 데이터센터의 성능을 결정하는 핵심 요소가 되었다.
+          생성형 AI의 확산으로 데이터 처리량은 폭발적으로 증가하고 있다.
+          이를 처리하기 위해 GPU는 더욱 높은 연산 성능을 요구하게 되었고,
+          데이터를 초고속으로 공급하는 HBM이 AI 반도체의 핵심 기술로 부상했다.
+          또한 GPU와 HBM을 하나의 패키지로 연결하는 CoWoS 기술은 AI 반도체의 성능을 극대화하는 기반 기술로 자리 잡고 있다.
+        </p>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+  <!-- bottleneck-->
+  <section class="bottleneck" id="bottleneck">
+    <div class="container">
+    <div class="blue-square04"></div>
+      <div class="section-title">
+        <h2>The AI Memory <span class="blue">Bottleneck</span></h2>
+        <p>AI 반도체는 어떻게 만들어지는가</p>
+      </div>
+
+      <div class="supply-chain">
+
+        <div class="chain-card reveal">
+          <h3>NVIDIA</h3>
+          <span>GPU설계</span>
+          <img src="./img/05.png" alt="">
+        </div>
+
+        <div class="arrow">></div>
+
+        <div class="chain-card reveal">
+          <h3>TSMC</h3>
+          <span>첨단 공정 생산</span>
+          <img src="./img/04.png" alt="">
+        </div>
+
+        <div class="arrow">></div>
+
+        <div class="chain-card reveal">
+          <h3>SK hynix</h3>
+          <span>HBM 공급</span>
+          <img src="./img/03.png" alt="">
+        </div>
+
+        <div class="arrow">></div>
+
+        <div class="chain-card reveal">
+          <h3>ASML</h3>
+          <span>EUV 장비 공급</span>
+          <img src="./img/02.png" alt="">
+        </div>
+
+      </div>
+
+      <div class="bottleneck-text">
+        <p>
+          AI 반도체 공급망은 NVIDIA, TSMC, SK hynix, ASML과 같은 기업들이 긴밀하게 연결된 구조로 이루어져 있다. NVIDIA가 GPU를 설계하면 TSMC는 이를 첨단 공정으로
+          생산하고, SK hynix는 고대역폭 메모리(HBM)를 공급한다.
+          또한 ASML은 EUV 장비를 통해 첨단 반도체 생산을 가능하게 만든다. 생성형 AI의 폭발적인 성장으로 GPU 수요는 급격히 증가했고, 기존 DRAM의 한계를 극복하기 위해 HBM이 AI 반도체의
+          핵심 기술로 부상했다. 여기에 GPU와 HBM을 연결하는 CoWoS 패키징 기술의 중요성까지 커지면서 공급망 전반에 새로운 병목현상이 발생하기 시작했다.
+        </p>
+        <br>
+        <p>
+          이제 부족한 것은 단순히 칩이 아니다. 칩을 설계하고, 생산하고, 연결하고, 패키징하고, 냉각하는 모든 과정이 동시에 한계에 직면하고 있다. 그 결과 세계 자본은 반도체뿐만 아니라 전력, 냉각,
+          데이터센터 인프라 산업으로 빠르게 이동하고 있다.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- Beyond -->
+  <section class="future" id="future">
+  <div class="blue-square05"></div>
+    <div class="container">
+      <div class="section-title">
+        <h2>BEYOND THE <span class="blue">CHIP</span></h2>
+        <p>전력과 냉각의 시대</p>
+      </div>
+
+      <div class="future-tech">
+
+        <div class="tech-box">
+          <h3>냉각기술</h3>
+          <div class="tech-items">
+            <div class="tech-item">
+              <img src="./img/11.png" alt="">
+              <span class="reveal">액침 냉각</span>
+            </div>
+            <div class="tech-item">
+              <img src="./img/12.png" alt="">
+              <span class="reveal">수냉식 냉각</span>
+            </div>
+            <div class="tech-item">
+              <img src="./img/13.png" alt="">
+              <span class="reveal">해저데이터센터</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tech-box">
+
+          <h3>다음기술</h3>
+
+          <div class="tech-items">
+
+            <div class="tech-item">
+              <img src="./img/15.png" alt="">
+              <span class="reveal">CPU</span>
+            </div>
+
+            <div class="tech-item">
+              <img src="./img/01.png" alt="">
+              <span class="reveal">HBM4</span>
+            </div>
+
+            <div class="tech-item">
+              <img src="./img/14.png" alt="">
+              <span class="reveal">PIM</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="future-text">
+        <p>
+          AI 데이터센터는 더 많은 전력을 소비하고 더 많은 열을 발생시키고 있다.
+          이에 따라 액침 냉각, 수냉식 냉각, 해저 데이터센터와 같은 차세대 냉각 기술이 주목받고 있다.
+          한편 HBM4는 더 높은 대역폭을 제공하는 차세대 AI 메모리이며, CXL은 메모리를 효율적으로 연결해 시스템 활용도를 높이는 기술이다.
+          또한 PIM은 메모리 내부에서 직접 연산을 수행해 데이터 이동을 줄이고 전력 효율을 향상시키는 차세대 반도체 기술로 주목받고 있다.
+        </p>
+      </div>
+
+      <div class="future-chip">
+        <div class="blue-circle"></div>
+        <img src="./img/222.png" alt=""  class="floating">
+      </div>
+
+      <p class="chip-copy">
+        <span class="blink">작은 칩</span> 하나가 전력과 인프라의 시대를 열었다.
+      </p>
+       
+      <div class="future-card">
+
+        <h4>AI 데이터 센터 전력 수요 전망</h4>
+
+        <div class="future-number">
+
+          <div class="number-box">
+            <span>2024</span>
+            <strong class="count" data-target="415">0</strong>
+            <em>TWh</em>
+          </div>
+
+          <div class="arrow">→</div>
+
+          <div class="number-box">
+            <span>2030</span>
+            <strong class="count" data-target="945">0</strong>
+            <em>TWh</em>
+          </div>
+
+        </div>
+
+        <p>
+          2030년 전력 수요가 2배 가까이 증가할 것으로 전망
+        </p>
+
+        <div class="future-city">
+
+          <img src="./img/001.png" alt="">
+
+        </div>
+
+        <!-- 엔딩 -->
+
+        <div class="future-ending">
+
+          <div class="blink">
+            <div class="blue-square"></div>
+          </div>
+
+          <p class="highlight">
+            <span class="blue">작은 칩</span> 하나의 발전은
+          </p>
+
+          <p class="end">
+            AI를 넘어 전력과 인프라의 경쟁까지 바꾸고 있다.
+          </p>
+
+        </div>
+
+
+        <!-- Footer -->
+
+        <footer class="footer">
+
+          <div class="container">
+
+            <div class="footer-logo">
+              THE WORLD RUNS ON CHIPS
+            </div>
+
+            <div class="footer-line"></div>
+
+            <div class="footer-info">
+
+              <p>
+                MicroImpact
+              </p>
+              <p>
+                2026910131 박주혜
+              </p>
+
+            </div>
+
+          </div>
+
+        </footer>
+
+
+  <script src="java.js"></script>
+
+
+
+</body>
