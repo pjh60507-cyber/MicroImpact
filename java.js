@@ -51,3 +51,32 @@ const spyObserver = new IntersectionObserver((entries) => {
 }, { rootMargin: '-45% 0px -45% 0px' });
 
 document.querySelectorAll('section[id]').forEach((sec) => spyObserver.observe(sec));
+
+
+
+
+
+
+
+
+const typingEl = document.querySelector('.typing');
+
+if (typingEl) {
+  const typingText = "THE WORLD\nRUNS ON\nCHIPS.";
+  let typingIndex = 0;
+  let built = "";   // 지금까지 친 글자 저장
+
+  function typeChar() {
+    if (typingIndex < typingText.length) {
+      const char = typingText[typingIndex];
+      built += (char === "\n") ? "<br>" : char;
+      typingEl.innerHTML = built;
+      typingIndex++;
+      setTimeout(typeChar,45);
+    } else {
+      // 타이핑 끝! "CHIPS." 만 깜빡이는 span으로 감싸기
+      typingEl.innerHTML = "THE WORLD<br>RUNS ON<br>CHIPS<span class='blink'>.</span>";
+    }
+  }
+  typeChar();
+}

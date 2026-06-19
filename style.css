@@ -56,7 +56,7 @@ flex-shrink:0;
 
 
 .blink{
-    animation: blink-color 1.5s steps(1) infinite;
+    animation: blink-color 0.8s steps(1) infinite;
 }
 
 @keyframes blink-color{
@@ -556,6 +556,7 @@ a{
     margin: 20px auto 0;
 
 }
+
 
 .year{
     display:flex;
@@ -1373,9 +1374,6 @@ margin-top: 300px;}
 }
 
 
-.blink{
-    text-align:center;
-}
 
 .blue-square{
     width:16px;
@@ -1423,7 +1421,7 @@ margin-top: 300px;}
 
 @keyframes float{
     0%   { transform:translate(-50%,-65%) rotate(0deg); }
-    50%  { transform:translate(-50%,-82%) rotate(3deg); }   /* 더 높이 + 살짝 기울임 */
+    50%  { transform:translate(-50%,-82%) rotate(3deg); }  
     100% { transform:translate(-50%,-65%) rotate(0deg); }
 }
 
@@ -1432,4 +1430,44 @@ margin-top: 300px;}
   font-weight: 600;
   border-bottom: 2px solid #2958ff;
   padding-bottom: 4px;
+}
+
+
+
+
+
+
+/* hero깜빡임*/
+.blink-box{
+    animation:box-blink 1s steps(1) infinite;
+}
+@keyframes box-blink{
+    0%   { background:#2958ff; }
+    50%  { background:#fff; }
+    100% { background:#2958ff; }
+}
+
+
+
+
+
+
+
+/* 히어로 배경 서서히 나타나기 */
+.hero__bg{
+    opacity:0;
+    animation:hero-fade 2.5s ease forwards;
+}
+
+@keyframes hero-fade{
+    from{
+        opacity:0;
+        transform:scale(1.3);       
+        filter:brightness(0.5);     
+    }
+    to{
+        opacity:1;
+        transform:scale(1);         
+        filter:brightness(1);    
+    }
 }
